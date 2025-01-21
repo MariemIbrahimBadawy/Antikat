@@ -1,0 +1,19 @@
+@import 'sass/helper/body';
+@import 'sass/helper/var';
+@import 'sass/helper/mixin';
+@import 'sass/helper/global';
+@import 'sass/layout/header';
+@import 'sass/layout/navbar';
+@import 'sass/layout/about';
+@import 'sass/layout/testimonials';
+@import 'sass/layout/projects';
+@import 'sass/componant/buttons';
+@import 'sass/layout/footer';
+@import 'sass/layout/loading';
+
+
+*{
+    @include prefixer (box-sizing ,  border-box , webkit moz);
+}
+
+

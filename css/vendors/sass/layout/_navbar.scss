@@ -1,0 +1,33 @@
+//  STart the NAvbar in the header
+
+.navbar{
+   position: sticky;
+   position: relative;
+   z-index:2;
+   top:-70px;
+   bottom: 0;
+   padding-top:0px;
+   background-color: rgba(black, 0.5);
+   
+
+  
+   .navbar-nav{
+
+    .nav-item{
+
+        color:$whiteColor; 
+        font-weight: bold;
+        border-bottom: 1px solid transparent; 
+        &:hover{
+            border-bottom: 2px solid $redColor;
+        }
+        @media(max-width:600px){
+            font-size:12px;
+        }
+    }
+    .active{
+        border-bottom: 2px solid $redColor; 
+    }
+   }
+}
+//  End the NAvbar in the header

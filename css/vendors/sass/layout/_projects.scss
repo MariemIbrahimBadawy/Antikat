@@ -1,0 +1,92 @@
+// Start projects
+
+section.projects{
+    padding-top: 20px;
+    .title-project{
+        @extend %titles;
+    } // .title
+    nav{
+        margin-top:20px;
+        padding-bottom: 50px;
+        .pagination{ 
+            margin:auto;
+
+                .page-link{
+                    color:$redColor;
+                    cursor: pointer;
+                   
+             }
+                .selected{
+                    background-color:$redColor;
+                    color:$whiteColor;
+                    border-color:$redColor;
+                }
+        }
+    } // nav
+    .item-projects{
+        
+        .box-project{
+            position: relative;
+           
+            .overlay-project{
+                background-color:rgba(gray , 0.4);
+                color:$whiteColor;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                display: none;
+                @include transition( all 15s ease-in);
+                color:white;
+                font-size: 18px;
+                height: 100%;
+
+                .content_layout{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    font-weight: bold;
+                  p{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    margin-left:85px;
+                  }
+                    a{
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        width: 100%;
+                        height: 100%;
+                        padding-right: 15px;
+                        padding-bottom: 10px;
+                        .heart{
+                            color:$redColor;
+                            margin:6px;
+                        }
+                    } //a
+                  }  // .content_layout
+            }
+            &:hover .overlay-project{
+                display: block;
+              
+            }
+
+        img {
+            background-size: cover;
+            width:100%;
+          }
+        }
+    } //.itm-projects
+
+} //section
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+
+     padding-right: 0px;
+     padding-left: 0px;
+
+}

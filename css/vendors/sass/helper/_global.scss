@@ -1,0 +1,82 @@
+
+ main{
+    margin-bottom: -68px !important;
+     font: {
+         family:$mainFamily;
+         size:18px;
+     }
+
+     .background-main {
+        position: relative;
+        top: -68px;
+         background: {
+             image:url('../../photos/analog-audio-cassette-2796145.jpg');
+             attachment:fixed;
+             size:cover;
+         }
+         .overlay-main{
+             background-color: rgba(black, 0.5);
+             
+         } //overlay
+     }
+ } //main
+
+
+ %titles{
+    a{
+         color:$mainColor;
+        
+        &:hover{
+            color:$mainColor;
+        }
+        h4{
+            color:$mainColor;
+            padding-top: 25px;
+            font: {
+                size:50px;
+                family:$fontHeader;
+            }
+
+        } //h4
+
+    } //a
+
+    hr{
+        background-color: $whiteColor;
+        color:$whiteColor
+    }
+    
+}
+
+
+// SocialMedia icons
+%socialMedia
+a{
+    .icon{
+        color: $redColor;
+        font-size: 18px;
+        &:hover{
+            color: $mainColor;
+        }
+    }
+}
+
+// in footer
+h6{
+    color:$mainColor;
+    margin-bottom: 30px;
+}
+
+.fixed-icon{
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+    cursor: pointer;
+    a{
+        color:$redColor;
+        &:hover{
+            color:rgba($redColor, 0.8);
+        }
+    }
+}

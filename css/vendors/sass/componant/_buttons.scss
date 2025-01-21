@@ -1,0 +1,21 @@
+.btn{
+    border:none;
+    background-color: $redColor;
+    color: $whiteColor;
+
+    &:hover{
+        @include transition(1.5s linear);
+        font-weight: bold;
+    }
+
+} //btn
+
+button.navbar-toggler{
+    color:$whiteColor;
+    background-color: rgba(black , 0.4);
+    padding: 8px 29px 8px 0px;
+ 
+
+    
+
+}

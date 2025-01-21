@@ -1,0 +1,16 @@
+//  Prefixes
+@mixin prefixer($property , $value , $prefixes:()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}:$value;
+}
+
+// Transition
+
+@mixin transition ($arges){
+    -webkit-transition: $arges;
+    -moz-transition: $arges; 
+    -o-transition: $arges; 
+    transition: $arges; 
+}

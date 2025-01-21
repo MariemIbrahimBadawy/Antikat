@@ -1,0 +1,51 @@
+// STart the about Section
+   
+section.about-us{
+    .title-about{
+        @extend %titles;
+    }
+   
+
+    .desc-about{
+        padding:20px 0;
+        p{
+            color:$whiteColor;
+           
+            a{
+                color:$mainColor;
+
+            }
+            span{
+                color:whitesmoke;
+
+            }
+        } //p
+    }
+    // Start the collaps btn
+    .collapse{
+        margin: 0px 64px;
+        .card{
+            background-color: rgba($whiteColor , 0.4) !important;
+            border-radius: 16px 0px;
+
+            p{
+                color:$whiteColor;
+            }
+
+            .icons-about{
+                @extend %socialMedia;
+               
+                }
+            }
+        }
+        .container-artical-about{
+            box-shadow:2px 5px 4px rgba($whiteColor , 0.5);
+            article{
+                color:$whiteColor;
+            }
+
+        }
+  
+ } //section
+
+// End the about Section

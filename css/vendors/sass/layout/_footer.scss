@@ -1,0 +1,104 @@
+footer{
+    background-color: black;
+    color: #888888;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    
+    p{
+        line-height: 2;
+    }
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+        }
+           
+        .about-footer{
+            @media (max-width:$minMedium){
+                margin-right:20px;
+            }
+                a{
+                    border:1px solid #888888;
+                    border-radius: 5%;
+                    padding:6px;
+                    margin-right: 5px;
+                    &:hover .icon-footer{
+                    color:$mainColor;     
+                    &:not(:last-child){
+                        margin-right: 10px;
+                    }
+                }
+                .icon-footer{
+                    color:#888888;
+                    font-size: 18px;
+                    margin: 0 !important;
+                
+
+                } //.icons
+            } //a
+  } //.about
+    
+    .details-footer{
+      margin-left: 40px;
+      @media (max-width:$minMedium){
+          margin-right: 20px;
+      }
+      @media (max-width:$maxMobile){
+          margin-left: 0;
+      }
+   
+    p{
+        display: inline-block;
+        color:#323232;
+     }
+    
+    span{
+        color: #888888;
+  }
+  @media(min-width:$minMedium){
+      width:50%;
+  }
+ } //details
+.posts-footer{
+     .col{
+         width:100%;
+         height: 100%; 
+     img{
+         width:100%;
+         height: 100%;
+         &:not(:last-child){
+            margin-bottom: 15px;
+        }
+     }
+     p{
+        color: #888888;
+        margin-left: 20px;
+        @media(max-width:$maxLarge){
+         line-height: 1;
+         font-size: 11px;
+
+         &:not(:first-of-type){
+             padding-top: 20px;
+         }
+        } //@larg
+        @media(min-width:$minMedium){
+            line-height: 1.9;
+            padding-top: 11px;
+        } //@medium
+
+        @media (max-width:983px){
+            line-height:2;
+            font-size:11px;
+            padding-top: 15px;
+        } 
+       
+        @media(min-width:$minSmall){
+            line-height: 1.9;
+            padding-top: 19px;
+        } //@medium
+
+     } //p
+   }
+ } //posts
+ 
+} //footer
+
